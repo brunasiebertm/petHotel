@@ -64,7 +64,12 @@ onMounted(carregarDados);
             <td>{{ pet.nome}}</td>
             <td>{{ pet.idade}}</td>
             <td>{{ pet.especie}}</td>
-            <td>{{ pet.tutor}}</td>
+            <td>{{ pet.tutorId}}</td>
+            <td> 
+              <RouterLink :to="`/pets/${pet.id}`">
+                Visualizar
+              </RouterLink>
+            </td>
         </tr>
       </tbody>
     </table>
